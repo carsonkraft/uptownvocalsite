@@ -1,47 +1,23 @@
 <header class="site-sidebar">
 
   <div class="sidebar">
-        <img src="/assets/img/sidebarlong.png"
+        <img src="/assets/img/sidebar.png"
         alt="Uptown Vocal Logo">
   </div>
 
 
     <div class="pages">
 
-            <p><a href="{{ site.baseurl }}/"
-              {% if page.title == 'Home' %}
-              class="current-tab sans button">Home
-              {% else %}
-              class="sans navbutton button">Home
-              {% endif %}
+            <p><a href="{{ site.baseurl }}/"> Home </a></p>
+            <p><a href="{{ site.baseurl }}/music"> Music </a></p>
+            <p><a href="{{ site.baseurl }}/members">
+            Members
             </a></p>
-            <p><a href="{{ site.baseurl }}/music"
-              {% if page.title == 'Music' %}
-              class="current-tab sans button">Music
-              {% else %}
-              class="sans navbutton button">Music
-              {% endif %}
+            <p><a href="{{ site.baseurl }}/about">
+            About
             </a></p>
-            <p><a href="{{ site.baseurl }}/members"
-              {% if page.title == 'Members' %}
-              class="current-tab sans button"><div class="members-title">Members</div>
-              {% else %}
-              class="sans navbutton button"><div class="members-title">Members</div>
-              {% endif %}
-            </a></p>
-            <p><a href="{{ site.baseurl }}/about"
-              {% if page.title == 'About' %}
-              class="current-tab sans button">About
-              {% else %}
-              class="sans navbutton button">About
-              {% endif %}
-            </a></p>
-            <p><a href="{{ site.baseurl }}/contact"
-              {% if page.title == 'Contact' %}
-              class="current-tab sans button">Contact
-              {% else %}
-              class="sans navbutton button">Contact
-              {% endif %}
+            <p><a href="{{ site.baseurl }}/contact">
+            Contact
             </a></p>
 
     </div>
