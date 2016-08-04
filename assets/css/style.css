@@ -71,11 +71,31 @@ h1 {
 
 }
 
-.media-icons img{
+.fb{
 
 	width: 20px;
 	margin: 7px;
 
+}
+
+.tweets{
+
+	width: 20px;
+	margin: 7px;
+
+}
+
+.insta{
+
+	width: 20px;
+	margin: 7px;
+
+}
+
+.tube{
+
+	width: 24px;
+	margin: 5px;
 }
 
 
