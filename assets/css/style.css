@@ -48,6 +48,7 @@ h1 {
     padding-left: 75px;
     padding-top: 130px;
     margin: 0;
+    z-index: 1;
 }
 
 .pages a{
@@ -68,6 +69,7 @@ h1 {
 	position: absolute;
   	margin-top: 170px;
   	margin-left: 10px;
+  	z-index: 1;
 
 }
 
@@ -281,8 +283,10 @@ body.home {
 /* ============ MUSIC.html ============ */
 
 .bandcamp {
+  position: absolute;
   min-height: 480px;
   padding-bottom: 56%;
+
 }
 
 .bandcamp iframe {
@@ -291,9 +295,14 @@ body.home {
   max-height: 480px;
 }
 
+.discography {
+	position: absolute;
+
+}
+
 .discography iframe {
-  border: solid rgb(255,255,255) 4px;
-  border: solid rgba(255,255,255,.4) 4px;
+  border: solid black 4px;
+  border: solid black 4px;
   width: 200px;
   height: 200px;
 }
@@ -304,9 +313,30 @@ body.home {
 
 /* ============ MEMBERS.html ============ */
 
+.side-bar-long img{
+    position: absolute;
+    padding-left: 30px;
+    width: 171.8px;
+    z-index: -2;
+
+}
+
+.uv-logo img{
+	position: absolute;
+	width: 200px;
+	margin-left: 70px;
+}
+
+.members-grid {
+	position: absolute;
+	padding-left: 110px;
+	padding-top: 200px;
+	margin-left: 5%;
+}
+
 .members-grid img {
-  border: solid white 4px;
-  border: solid rgba(255,255,255,.8) 4px;
+  border: solid black 4px;
+  border: solid black 4px;
   transition: border .1s ease-in-out;
 
   -webkit-transition: border .1s ease-in-out;
@@ -315,12 +345,111 @@ body.home {
 }
 
 .members-grid img:hover{
-  border: solid rgb(60,150,240) 4px;
+  border: solid #6bc3ee 4px;
 }
 
 .members-grid h4 {
   font-size: 1.1rem;
   text-align: center;
+}
+
+.floating-text {
+
+	padding-top: 100px;
+	font-family: 'Merriweather';
+	position: absolute;
+	margin-left: 36%;
+}
+
+h4{
+
+	color: white;
+	font-family: 'Merriweather';
+}
+
+/* ============ CONTACT.html ============ */
+
+.banner img{
+
+	position: absolute;
+	width: 85%;
+	max-width: 2000px;
+	padding-left: 150px;
+	padding-top: 190px;
+	margin-left: 5%;
+
+}
+
+.contact-text {
+
+	position: absolute;
+	width: 80%;
+	padding-left: 160px;
+	padding-top: 200px;
+	margin-left: 5%;
+}
+
+.contact-text p{
+
+	font-family: "Merriweather";
+	color: white;
+
+}
+
+
+.contact-form{
+
+	position: absolute;
+	padding-left: 150px;
+	padding-top: 280px;
+	margin-left: 5%;
+
+}
+
+
+input[type=name] {
+
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	border: 2px solid white;
+    border-radius: 4px;
+
+}
+
+input[type=name] :focus {
+
+	border: #6bc3ee;
+
+}
+
+input[type=email] {
+
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	border: 2px solid white;
+    border-radius: 4px;
+    margin-top: 10px;
+
+}
+
+input[type=email] :focus {
+
+	border: #6bc3ee;
+	background-color: black;
+
+}
+
+
+textarea[name=message] {
+
+	width: 500px;
+	height: 250px;
+	background-color: black;
+	border: 2px solid white;
+    border-radius: 4px;
+
 }
 
 /* --- Modals --- */
@@ -445,7 +574,7 @@ body.home {
   }
 
   .members-grid img {
-    border: solid white 3px;
+    border: solid black 3px;
   }
 
   .members-grid h4 {
@@ -464,7 +593,7 @@ body.home {
   }
 
   .members-grid img {
-    border: solid white 2px;
+    border: solid black 2px;
   }
 
   .blurb {
