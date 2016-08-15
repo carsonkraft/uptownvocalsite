@@ -383,9 +383,9 @@ h4{
 .contact-text {
 
 	position: absolute;
-	width: 80%;
+	width: 85%;
 	padding-left: 160px;
-	padding-top: 200px;
+	padding-top: 170px;
 	margin-left: 5%;
 }
 
@@ -403,21 +403,37 @@ h4{
 	padding-left: 150px;
 	padding-top: 280px;
 	margin-left: 5%;
+	width: 70%;
+	color: white;
+	font-family: 'Helvetica';
 
 }
+
+.contact-form p{
+
+	margin-bottom: 10px;
+
+	}
 
 
 input[type=name] {
 
-	height: 50px;
-	width: 200px;
+	height: 35px;
+	width: 40%;
+	max-width: 200px;
+	min-width: 150px;
 	background-color: black;
 	border: 2px solid white;
     border-radius: 4px;
+    margin-top: none;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    font-size: 15px;
+    font-family: 'Merriweather';
 
 }
 
-input[type=name] :focus {
+input[type=name]:focus {
 
 	border: #6bc3ee;
 
@@ -425,16 +441,19 @@ input[type=name] :focus {
 
 input[type=email] {
 
-	height: 50px;
-	width: 200px;
+	height: 35px;
+	width: 40%;
+	max-width: 200px;
+	width: 40%;
 	background-color: black;
 	border: 2px solid white;
     border-radius: 4px;
     margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
-input[type=email] :focus {
+input:focus {
 
 	border: #6bc3ee;
 	background-color: black;
@@ -444,8 +463,9 @@ input[type=email] :focus {
 
 textarea[name=message] {
 
-	width: 500px;
+	max-width: 500px;
 	height: 250px;
+	width: 100%;
 	background-color: black;
 	border: 2px solid white;
     border-radius: 4px;
