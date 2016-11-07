@@ -1,7 +1,7 @@
 body {
   /*background-color: black;*/
   background-color: black;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 300;
 
 }
@@ -14,8 +14,9 @@ h1 {
 }
 
 .sans {
-  font-family: 'Droid Sans', Helvetica, sans-serif;
-  letter-spacing: 1px
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1;
 }
 
 .serif {
@@ -42,7 +43,7 @@ h1 {
     height: 100vh;
 }
 .pages {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Neue';
     position: absolute;
     background-color: none;
     border-color: none;
@@ -121,8 +122,9 @@ body.home {
       margin-left: 30%;
       margin-top: 20%;
       position: absolute;
-      max-width: 350px;
-      width: 50%;
+      max-width: 400px;
+      min-width: 200px;
+      width: 43%;
       height: auto;
 }
 
@@ -131,11 +133,11 @@ body.home {
 	position: absolute;
 	font-family: 'Merriweather';
 	color: white;
-	padding-left: 85px;
-	padding-right: 40px;
+	padding-left: 80px;
 	padding-top: 25px;
-	margin-top: 40%;
-	margin-left: 13%;
+  padding-right: 100px;
+	margin-top: 42%;
+	margin-left: 15%;
 
 }
 
@@ -288,22 +290,24 @@ body.home {
 
 	position: absolute;
 	width: 90%;
-	padding-left: 160px;
+	padding-left: 350px;
 	padding-top: 120px;
 	margin-left: 5%;
 
 }
 
-.videos iframe{ 
+/*iframe{ 
 
-	display: block;
 	max-width:560px;
 	max-height: 315px;
-	width: auto;
-	height: auto;
 
-}
+}*/
 
+/*.flex-video{
+
+  padding-bottom: 40%;
+  margin-left: 14%;
+}*/
 
 /* ============ MEMBERS.html ============ */
 
@@ -312,12 +316,6 @@ body.home {
     padding-left: 30px;
     width: 171.8px;
     z-index: -2;
-}
-
-@media(max-width: 1000px) {
-  .side-bar-long img{
-    display: none;
-  }
 }
 
 .uv-logo img{
@@ -355,10 +353,12 @@ body.home {
 
 .floating-text {
 
-	padding-top: 110px;
+	padding-top: 0;
 	font-family: 'Merriweather';
-	position: absolute;
-	margin-left: 36%;
+  font-weight: 400;
+  font-size: 30px;
+	margin-left: 0;
+  line-height: 40px;
 }
 
 h4{
@@ -394,6 +394,7 @@ h4{
 	font-family: "Merriweather";
 	color: white;
 	font-size: 14px;
+  margin-bottom: 10px;
 
 }
 
@@ -402,11 +403,10 @@ h4{
 	width: 100%;
 	display: block;
 	margin: auto;	
+  padding-bottom: 20px;
 }
 
 /* ============ ABOUT.html ============ */
-
-
 
 .text {
 
@@ -415,6 +415,7 @@ h4{
 	padding-left: 160px;
 	padding-top: 120px;
 	margin-left: 5%;
+  margin-bottom: 1rem;
 }
 
 .text p{
@@ -432,6 +433,10 @@ h4{
 	margin: auto;	
 }
 
+.p1 {
+
+  margin-bottom: 150px;
+}
 
 /* --- Modals --- */
 
@@ -479,7 +484,7 @@ h4{
  .modalDialog h3{
 
 	margin: 0;
-	font-family: 'Helvetica';
+	font-family: 'Helvetica Neue';
 	font-weight: bold;
 	color: black;
 	font-size: 30px;
@@ -520,9 +525,7 @@ h4{
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-  -webkit-box-shadow: 1px 1px 3px rgb(0,0,0);
-  -moz-box-shadow:    1px 1px 3px rgb(0,0,0);
-  box-shadow:         1px 1px 3px rgb(0,0,0);
+
 }
 
 .close:hover {
@@ -577,7 +580,6 @@ h4{
     border: none;
     width: 150px;
     height: 150px;
-
     margin-top: 300px;
   }
 
